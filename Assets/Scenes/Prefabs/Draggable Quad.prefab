@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2887829115800686378}
   - component: {fileID: 2978569763398862448}
   - component: {fileID: 1961110300127507198}
+  - component: {fileID: 8357108027118534274}
   m_Layer: 0
   m_Name: Draggable Quad
   m_TagString: Untagged
@@ -147,3 +148,15 @@ MonoBehaviour:
   minLimits: {x: 79, y: 5, z: 41}
   maxLimits: {x: 108, y: 30, z: 75}
   useLimits: 1
+--- !u!114 &8357108027118534274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31723942349955270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc4110b72d07f54bb3cb4245e4e35a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
