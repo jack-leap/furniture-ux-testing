@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 345937611288111045}
   - component: {fileID: 3452923134715050878}
   - component: {fileID: 879374951252804980}
+  - component: {fileID: 1046001161764946089}
   m_Layer: 0
   m_Name: Draggable Cube
   m_TagString: Untagged
@@ -114,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 4883521025029384047}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 124.9, y: -1.110223e-16, z: 66}
+  m_LocalPosition: {x: 124.9, y: -1.110223e-16, z: 51.19}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -136,7 +137,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -155,9 +156,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedPlane: 1
+  useLimits: 1
   minLimits: {x: 35.8, y: 0, z: 3.6}
   maxLimits: {x: 145.5, y: 0, z: 128.4}
-  useLimits: 1
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  draggableLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &879374951252804980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,3 +177,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc4110b72d07f54bb3cb4245e4e35a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1046001161764946089
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883521025029384047}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
