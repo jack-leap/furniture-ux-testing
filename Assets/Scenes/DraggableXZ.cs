@@ -42,6 +42,7 @@ public class Draggable : MonoBehaviour
             {
                 if (hit.transform == transform)
                 {
+                    GameObjectManager.Instance.SetSelectedObject(gameObject);
                     isDragging = true;
 
                     // Set the drag plane

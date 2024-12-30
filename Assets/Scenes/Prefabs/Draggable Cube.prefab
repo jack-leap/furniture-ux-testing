@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 6127489350296336135}
   - component: {fileID: 345937611288111045}
   - component: {fileID: 3452923134715050878}
-  - component: {fileID: 879374951252804980}
   - component: {fileID: 1046001161764946089}
+  - component: {fileID: 6481821249412513341}
   m_Layer: 0
   m_Name: Draggable Cube
   m_TagString: Untagged
@@ -165,18 +165,6 @@ MonoBehaviour:
   draggableLayer:
     serializedVersion: 2
     m_Bits: 1
---- !u!114 &879374951252804980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4883521025029384047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbc4110b72d07f54bb3cb4245e4e35a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1046001161764946089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -202,5 +190,17 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!114 &6481821249412513341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883521025029384047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bf3a3c129cb93409c10c9f9e83c74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

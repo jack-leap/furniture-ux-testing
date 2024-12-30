@@ -7,6 +7,10 @@ public class ItemSpawnController : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(prefabToSpawn, spawnRoot);
+        GameObject newObject = Instantiate(prefabToSpawn, spawnRoot);
+        if (GameObjectManager.Instance != null)
+        {
+            GameObjectManager.Instance.RegisterGameObject(newObject);
+        }
     }
 }
