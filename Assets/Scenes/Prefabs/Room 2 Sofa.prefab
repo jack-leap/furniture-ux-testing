@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c6b1af631d8f4c49a14486d98b51053, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c6b1af631d8f4c49a14486d98b51053, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c6b1af631d8f4c49a14486d98b51053, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 51
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c6b1af631d8f4c49a14486d98b51053, type: 3}
       propertyPath: m_LocalRotation.w
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2c6b1af631d8f4c49a14486d98b51053, type: 3}
       propertyPath: m_Name
-      value: Draggable Chair
+      value: Room 2 Sofa
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2c6b1af631d8f4c49a14486d98b51053, type: 3}
       propertyPath: m_TagString
@@ -129,8 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedPlane: 1
   useLimits: 1
-  minLimits: {x: 35.8, y: 0, z: 3.6}
-  maxLimits: {x: 145.5, y: 0, z: 128.4}
+  minLimits: {x: -72.4, y: 0, z: -35}
+  maxLimits: {x: 52.5, y: 0, z: 31.7}
   collisionLayer:
     serializedVersion: 2
     m_Bits: 64
